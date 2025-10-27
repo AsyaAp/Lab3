@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.tools-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 250px;
+}
+
+.tool {
+    padding: 12px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.tool:hover {
+    background-color: #333333;
+}
+
+.tool.active {
+    background-color: #666666;
+}
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 1px;
+    border: 2px solid #333;
+    background-color: #ddd;
+    padding: 5px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.land {
+    background-color: #deb887;
+}
+
+.water {
+    background-color: #1e90ff;
+}
+
+.plant {
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.plant.small {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.plant.medium {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.plant.large {
+    font-size: 24px;
+    opacity: 1;
+}
+
+.info-panel {
+    padding: 15px;
+    background-color: #e8f4e8;
+    border: 2px solid #333;
+    min-width: 250px;
+    text-align: center;
+}
+
+.info-panel h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.info-panel p {
+    margin: 10px 0;
+    line-height: 1.4;
+}

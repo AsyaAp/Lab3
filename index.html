@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сельскохозяйственный симулятор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="tools-panel">
+                <button class="tool active" id="cursor" type="button">
+                    Курсор - просмотр информации о клетке
+                </button>
+                <button class="tool" id="shovel" type="button">
+                    Лопата - копать землю или убирать растения
+                </button>
+                <button class="tool" id="marsh-seeds" type="button">
+                    Болотник - влажность 70-100%
+                </button>
+                <button class="tool" id="potato-seeds" type="button">
+                    Картошка - влажность 30-80%
+                </button>
+                <button class="tool" id="cactus-seeds" type="button">
+                    Кактус - влажность 0-40%
+                </button>
+                <button class="tool" id="bucket" type="button">
+                    Ведро - добавлять или убирать воду
+                </button>
+            </div>
+            
+            <div class="game-area">
+                <div class="grid" id="grid"></div>
+                
+                <div class="info-panel">
+                    <h3>Информация о клетке</h3>
+                    <p id="cell-info">Выберите клетку для просмотра информации</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
